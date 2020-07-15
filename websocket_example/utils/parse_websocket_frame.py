@@ -1,21 +1,4 @@
 import codecs,binascii
-def test9():
-    all1=b"\x81\x8b%HK\xefI',\x86Kr)\x86Q+#"
-    all2=b'\x81\x8b\x03\xf0\xa4[o\x9f\xc32m\xca\xc62w\x93\xcc'
-    all=b'\x81\x8bk\xe3\xf74\x07\x8c\x90]\x05\xd9\x95]\x1f\x80\x9f'
-    head=b'\x81\x8bk\xe3\xf74'
-    load = b'\x07\x8c\x90]\x05\xd9\x95]\x1f\x80\x9f'
-    loadx = 'login:bitch'
-    print('all:','--','len:',len(all))
-    print('head:', '--', 'len:', len(head))
-    print('load:', '--', 'len:', len(load))
-    print(head.hex())
-    print(all.hex())
-    print(all.hex()[4:12]) #8
-    print(all.hex()[12:]) #22
-    # print(bytes.fromhex(all1.hex()[12:]))
-    # print(binascii.unhexlify(all.hex()[12:]).decode('utf-8'))
-
 
 def xor(i,j):
     return i^j
